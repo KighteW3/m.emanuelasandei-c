@@ -1,59 +1,22 @@
 body {
 	scroll-behavior: smooth;
-}
-
-#body {
 	width: 100%;
 	height: 100%;
 }
 
-.introduction-box-container {
-	width: 100%;
-	height: 40vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.introduction-box-img {
+#viewport {
 	width: 100%;
 	height: 100%;
-	transform: scale(120%);
-	filter:  blur(1px);
-	animation-name: introductionImgEffect;
-	animation-duration: 20s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
 }
 
-.introduction-box {
-	position: absolute;
-	width: inherit;
-	height: inherit;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+#first-article {
+	width: 100%;
+	height: 30vh;
+	min-height: 277px;
+	background-color: #424;
 }
 
-.introduction-box-title-container {
-	width: 60%;
-	background: #000;
-	border-radius: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: Center;
-}
-
-@keyframes introductionImgEffect {
-	0% {
-		transform: scale(120%);
-	}
-	100% {
-		transform: scale(140%);
-	}
-}
-
-.introduction-box-title {
-	color: #fafafa;
+#second-article {
+	background-color: #222;
+	height: 100em;
 }
