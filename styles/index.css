@@ -11,9 +11,52 @@ body {
 
 #first-article {
 	width: 100%;
-	height: 50vh;
-	min-height: 277px;
+	height: 70vh;
+	min-height: 648px;
 	background-color: #424;
+}
+
+.title-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-decoration-circles {
+	width: 200px;
+	height: 200px;
+	background-color: #dde;
+}
+
+.title-decoration-circles-1 {
+	border-radius: 50%;
+	transform: translate(0,50%);
+	z-index: 50
+}
+
+.title-decoration-circles-2 {
+	border-radius: 50%;
+	transform: translate(0,-50%);
+	z-index: 50
+}
+
+.title-plate {
+	width: 100%;
+	height: 40%;
+	background: #000;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-plate h1 {
+	font-size: 4em;
+	text-align: center;
+	line-height: 0.79;
 }
 
 #second-article {
