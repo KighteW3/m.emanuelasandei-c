@@ -40,10 +40,9 @@ body {
 	transform: translate(0,50%);
 	z-index: 50;
 	animation-name: titlePlatesCircles;
-	animation-direction: alternate;
+	animation-direction: normal;
 	animation-iteration-count: infinite;
-	animation-fill-mode: both;
-	animation-duration: 1s;
+	animation-duration: 2s;
 	animation-delay: 0;
 }
 
@@ -52,28 +51,27 @@ body {
 	transform: translate(0,-50%);
 	z-index: 50;
 	animation-name: titlePlatesCircles2;
-	animation-direction: alternate-reverse;
+	animation-direction: normal;
 	animation-iteration-count: infinite;
-	animation-fill-mode: both;
-	animation-duration: 1s;
+	animation-duration: 2s;
 	animation-delay: 0;
 }
 
 @keyframes titlePlatesCircles {
 	0%{
-		transform: translate(calc(100vw),50%);
+		transform: translate(calc(90vw),50%);
 	}
 	100%{
-		transform: translate(calc(-100vw),50%);
+		transform: translate(calc(-90vw),50%);
 	}
 }
 
 @keyframes titlePlatesCircles2 {
 	0%{
-		transform: translate(calc(100vw),-50%);
+		transform: translate(calc(-90vw),-50%);
 	}
 	100%{
-		transform: translate(calc(-100vw),-50%);
+		transform: translate(calc(90vw),-50%);
 	}
 }
 
