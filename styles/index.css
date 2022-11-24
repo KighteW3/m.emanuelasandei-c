@@ -1,3 +1,7 @@
+*{
+	overflow-x: hidden
+}
+
 body {
 	scroll-behavior: smooth;
 	width: 100%;
@@ -34,13 +38,43 @@ body {
 .title-decoration-circles-1 {
 	border-radius: 50%;
 	transform: translate(0,50%);
-	z-index: 50
+	z-index: 50;
+	animation-name: titlePlatesCircles;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+	animation-duration: 1s;
+	animation-delay: 0;
 }
 
 .title-decoration-circles-2 {
 	border-radius: 50%;
 	transform: translate(0,-50%);
-	z-index: 50
+	z-index: 50;
+	animation-name: titlePlatesCircles2;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+	animation-duration: 1s;
+	animation-delay: 0;
+}
+
+@keyframes titlePlatesCircles {
+	0%{
+		transform: translate(calc(100vw),50%);
+	}
+	100%{
+		transform: translate(calc(-100vw),50%);
+	}
+}
+
+@keyframes titlePlatesCircles2 {
+	0%{
+		transform: translate(calc(100vw),-50%);
+	}
+	100%{
+		transform: translate(calc(-100vw),-50%);
+	}
 }
 
 .title-plate {
@@ -57,6 +91,10 @@ body {
 	font-size: 4em;
 	text-align: center;
 	line-height: 0.79;
+	position: absolute;
+	color: #dde;
+	overflow-y: hidden;
+	user-select: none;
 }
 
 #second-article {
