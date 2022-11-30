@@ -18,6 +18,26 @@ body {
 	height: 70vh;
 	min-height: 648px;
 	background-color: #000;
+	animation-name: firstArticleBackground;
+	animation-duration: 30s;
+	animation-fill-mode: both;
+	animation-direction: alternate;
+	transition: 30s;
+}
+
+@keyframes firstArticleBackground {
+	0% {
+		background-color: #000;
+	}
+	30% {
+		background-color: #1f0000;
+	}
+	60% {
+		background-color: #1f1f00;
+	}
+	100% {
+		background-color: #10001f;
+	}
 }
 
 .title-container {
@@ -42,7 +62,7 @@ body {
 	animation-name: titlePlatesCircles;
 	animation-direction: normal;
 	animation-iteration-count: infinite;
-	animation-duration: 1s;
+	animation-duration: 2s;
 	animation-delay: 0;
 }
 
@@ -53,7 +73,7 @@ body {
 	animation-name: titlePlatesCircles2;
 	animation-direction: normal;
 	animation-iteration-count: infinite;
-	animation-duration: 1s;
+	animation-duration: 2s;
 	animation-delay: 0;
 }
 
@@ -96,6 +116,18 @@ body {
 }
 
 #second-article {
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+
+
+
+
+
+
+
+#third-article {
 	background-color: #222;
 	height: 100em;
 }
