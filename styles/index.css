@@ -19,9 +19,8 @@ body {
 	background-color: #000;
 	animation-name: firstArticleBackground;
 	animation-duration: 30s;
-	animation-fill-mode: both;
 	animation-direction: alternate;
-	transition: 30s;
+	animation-iteration-count: infinite;
 }
 
 @keyframes firstArticleBackground {
